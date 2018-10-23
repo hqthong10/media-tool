@@ -10,10 +10,12 @@ import android.view.ViewGroup;
 
 import com.hqthong.mediatool.MainActivity;
 import com.hqthong.mediatool.R;
+import com.hqthong.mediatool.adapter.VideoAdapter;
 
 public class VideoMainFragment extends DefaultTemplateFragment {
     View parent;
 
+    VideoAdapter mAdapt;
 
     public static VideoMainFragment newInstance() {
         VideoMainFragment fragmentFirst = new VideoMainFragment();

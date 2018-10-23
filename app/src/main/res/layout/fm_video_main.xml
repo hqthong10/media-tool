@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.hqthong.mediatool.views.MyTextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="video"/>
+        android:orientation="vertical">
 
-</FrameLayout><!-- end layout detail public pieper -->
+        <com.hqthong.mediatool.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Tổng video:" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.hqthong.mediatool.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Tổng dung lượng:" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout><!-- end layout detail public pieper -->
 
