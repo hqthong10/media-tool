@@ -11,10 +11,6 @@ import android.view.ViewGroup;
 import com.hqthong.mediatool.MainActivity;
 import com.hqthong.mediatool.R;
 
-/**
- * Created by Dragon on 1/6/17.
- */
-
 public class VideoMainFragment extends DefaultTemplateFragment {
     View parent;
 
