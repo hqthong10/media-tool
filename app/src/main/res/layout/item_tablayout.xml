@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.piepme.android.view.MyTextView
+    <com.hqthong.mediatool.views.MyTextView
         android:id="@+id/mtv_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,10 +13,10 @@
         android:text=""
         android:textAppearance="@style/MyTabLayout"
         android:textColor="#888"
-        android:textSize="12sp"
+        android:textSize="22sp"
         app:typeface="@string/fonts_media" />
 
-    <com.piepme.android.view.MyTextView
+    <com.hqthong.mediatool.views.MyTextView
         android:id="@+id/mtv_notice"
         android:layout_width="8dp"
         android:layout_height="8dp"
