@@ -18,7 +18,7 @@
         app:tabTextAppearance="@style/MyTabLayout"
         app:tabTextColor="#888" />
 
-    <com.piepme.android.other.CustomViewPager
+    <com.hqthong.mediatool.views.CustomViewPager
         android:id="@+id/cwp_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

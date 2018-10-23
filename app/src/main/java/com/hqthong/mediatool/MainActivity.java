@@ -4,6 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,8 +12,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+import com.hqthong.mediatool.adapter.MyPaperAdapter;
+import com.hqthong.mediatool.fragment.ImageMainFragment;
+import com.hqthong.mediatool.fragment.LiveMainFragment;
+import com.hqthong.mediatool.fragment.SettingMainFragment;
+import com.hqthong.mediatool.fragment.ToolMainFragment;
+import com.hqthong.mediatool.fragment.VideoMainFragment;
 import com.hqthong.mediatool.views.CustomViewPager;
 import com.hqthong.mediatool.views.MyTextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
     CustomViewPager cwp_layout;
 
     MainActivity activity;
+    VideoMainFragment frVideo;
+    ImageMainFragment frImage;
+    LiveMainFragment frLive;
+    ToolMainFragment frTool;
+    SettingMainFragment frSetting;
+
+    private List<Fragment> fragments = new ArrayList<Fragment>();
+    private MyPaperAdapter lstPieperAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +56,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         activity = this;
+
+        frVideo = new VideoMainFragment();
+        fragments.add(frVideo);
+        frImage = new ImageMainFragment();
+        fragments.add(frImage);
+        frLive = new LiveMainFragment();
+        fragments.add(frLive);
+        frTool = new ToolMainFragment();
+        fragments.add(frTool);
+        frSetting = new SettingMainFragment();
+        fragments.add(frSetting);
+
+        lstPieperAdapter = new MyPaperAdapter(getSupportFragmentManager(), fragments);
+        cwp_layout.setAdapter(lstPieperAdapter);
+        tab_main.setupWithViewPager(cwp_layout);
+        initTabLayout();
     }
 
     private void initTabLayout() {
