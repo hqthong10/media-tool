@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">mediatool</string>
+    <string name="fonts_roboto_thin" translatable="false">fonts/Roboto-Thin.ttf</string>
+    <string name="fonts_roboto_bold" translatable="false">fonts/Roboto-Bold.ttf</string>
+    <string name="fonts_roboto_light" translatable="false">fonts/Roboto-Light.ttf</string>
+    <string name="fonts_roboto_medium" translatable="false">fonts/Roboto-Medium.ttf</string>
+    <string name="fonts_roboto_regular" translatable="false">fonts/Roboto-Regular.ttf</string>
+    <string name="fonts_opensans_bold" translatable="false">fonts/OpenSans-Bold.ttf</string>
+    <string name="fonts_opensans_bold_italic" translatable="false">fonts/OpenSans-BoldItalic.ttf</string>
+    <string name="fonts_opensans_extra_bold" translatable="false">fonts/OpenSans-ExtraBold.ttf</string>
+    <string name="fonts_opensans_extra_bold_italic" translatable="false">fonts/OpenSans-ExtraBoldItalic.ttf</string>
+    <string name="fonts_opensans_italic" translatable="false">fonts/OpenSans-Italic.ttf</string>
+    <string name="fonts_opensans_light" translatable="false">fonts/OpenSans-Light.ttf</string>
+    <string name="fonts_opensans_light_italic" translatable="false">fonts/OpenSans-LightItalic.ttf</string>
+    <string name="fonts_opensans_regular" translatable="false">fonts/OpenSans-Regular.ttf</string>
+    <string name="fonts_opensans_semi_bold" translatable="false">fonts/OpenSans-Semibold.ttf</string>
+    <string name="fonts_opensans_semi_bold_italic" translatable="false">fonts/OpenSans-SemiboldItalic.ttf</string>
+    <string name="fonts_helveticaneue_light" translatable="false">fonts/helveticaneuelight.ttf</string>
+    <string name="fonts_helveticaneue_medium" translatable="false">fonts/helveticaneuemedium.ttf</string>
+    <string name="fonts_helveticaneue_bold" translatable="false">fonts/helveticaneuebold.ttf</string>
+    <string name="fonts_media" translatable="false">fonts/media.ttf</string>
+
+    <string name="icon_camera" translatable="false">&#xe412;</string>
+    <string name="icon_video" translatable="false">&#xe63a;</string>
+    <string name="icon_play_circle" translatable="false">&#xe039;</string>
+    <string name="icon_setting" translatable="false">&#xe8b8;</string>
+    <string name="icon_tune" translatable="false">&#xe429;</string>
+
+</resources>

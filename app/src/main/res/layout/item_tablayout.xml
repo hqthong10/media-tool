@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.piepme.android.view.MyTextView
+        android:id="@+id/mtv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textAppearance="@style/MyTabLayout"
+        android:textColor="#888"
+        android:textSize="12sp"
+        app:typeface="@string/fonts_media" />
+
+    <com.piepme.android.view.MyTextView
+        android:id="@+id/mtv_notice"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_toRightOf="@+id/mtv_icon"
+        android:layout_above="@id/mtv_icon"
+        android:background="@null"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:typeface="@string/fonts_opensans_semi_bold" />
+
+</RelativeLayout>
